@@ -10,8 +10,8 @@
     "contact": "Contacto"
   },
   "hero": {
-    "welcome": "Bienvenido!",
-    "description": "Inventario Record Store - Music Books",
+    "welcome": "Bienvenido a",
+    "description": "Inventario",
     "backgroundImage": {
       "img": "src/assets/img/main_banner.webp",
       "alt": "Banner vinilos"
