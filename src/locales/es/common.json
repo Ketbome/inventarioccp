@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "title": "Inventario Record Store - Music Books",
+    "description": "Tienda de vinilos y música en formato físico"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "catalog": "Catálogo",
+    "about": "Nosotros",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "welcome": "Bienvenido!",
+    "description": "Inventario Record Store - Music Books",
+    "backgroundImage": {
+      "img": "src/assets/img/main_banner.webp",
+      "alt": "Banner vinilos"
+    },
+    "icon": {
+      "img": "src/assets/img/inventario_icon.webp",
+      "alt": "Inventario Record Store - Music Books"
+    }
+  },
+  "featured": {
+    "title": "Destacados",
+    "subtitle": "Nuestra selección especial",
+    "viewMore": "Ver más",
+    "items": [
+      {
+        "id": 1,
+        "title": "Vinyl Collection 2024",
+        "image": "/images/featured/vinyl-collection.jpg",
+        "price": "$29.99"
+      },
+      {
+        "id": 2,
+        "title": "Edición Limitada",
+        "image": "/images/featured/limited-edition.jpg",
+        "price": "$39.99"
+      }
+    ]
+  },
+  "products": {
+    "title": "Nuestro Catálogo",
+    "categories": {
+      "vinyl": "Vinilos",
+      "cd": "CDs",
+      "book": "Libros",
+      "accessory": "Accesorios"
+    },
+    "categoryImages": {
+      "vinyl": "/images/categories/vinyl.jpg",
+      "cd": "/images/categories/cd.jpg",
+      "book": "/images/categories/book.jpg",
+      "accessory": "/images/categories/accessory.jpg"
+    },
+    "filters": {
+      "genre": "Género",
+      "price": "Precio",
+      "format": "Formato"
+    }
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "history": "Una historia de pasión por la música",
+    "description": "Desde 2020 compartiendo la mejor música en formato físico",
+    "backgroundImage": "/images/about-background.jpg"
+  },
+  "contact": {
+    "title": "Contacto",
+    "address": "Dirección",
+    "phone": "Teléfono",
+    "email": "Correo",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "message": "Mensaje",
+      "submit": "Enviar mensaje"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Inventario. Todos los derechos reservados.",
+    "social": "Síguenos en redes",
+    "newsletter": "Suscríbete al newsletter",
+    "socialLinks": {
+      "instagram": "https://instagram.com/inventario",
+      "facebook": "https://facebook.com/inventario",
+      "twitter": "https://twitter.com/inventario"
+    }
+  }
+}
