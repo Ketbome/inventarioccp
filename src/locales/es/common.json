@@ -21,25 +21,14 @@
       "alt": "Inventario Record Store - Music Books"
     }
   },
-  "featured": {
-    "title": "Destacados",
-    "subtitle": "Nuestra selección especial",
-    "viewMore": "Ver más",
-    "items": [
-      {
-        "id": 1,
-        "title": "Vinyl Collection 2024",
-        "image": "/images/featured/vinyl-collection.jpg",
-        "price": "$29.99"
-      },
-      {
-        "id": 2,
-        "title": "Edición Limitada",
-        "image": "/images/featured/limited-edition.jpg",
-        "price": "$39.99"
-      }
-    ]
-  },
+  "gallery": [
+    { "name": "VVAA - Mothers Garden (The Funky Sounds Of Female Africa 1975 - 1984) (LP)", "img": "/gallery/1.webp" },
+    { "name": "Romare - Love Songs: Part Two (2x LP, LIMITED EDITION)", "img": "/gallery/2.webp" },
+    { "name": "Mr. Fingers - Cerebral Hemispheres (2018, 3 x LP)", "img": "/gallery/3.webp" },
+    { "name": "Pucho & The Latin Soul Brothers – Tough (LP)", "img": "/gallery/4.webp" },
+    { "name": "Kendrick Lamar - DAMN (2 x LP)", "img": "/gallery/5.webp" },
+    { "name": "Hany Mehanna-Agaeb El Rakasat El Sabaa - The Miracles Of The Seven Dances", "img": "/gallery/6.webp" }
+  ],
   "products": {
     "title": "Nuestro Catálogo",
     "categories": {

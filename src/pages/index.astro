@@ -1,11 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
-import Products from "../components/Products.astro";
 import AboutUs from "../components/AboutUs.astro";
-import Contact from "../components/Contact.astro";
 import Footer from "../components/Footer.astro";
 import { metadata } from "../locales/es/common.json";
+import Gallery from "../components/Gallery.astro";
 
 const { title, description } = metadata;
 ---
@@ -13,7 +12,6 @@ const { title, description } = metadata;
 <BaseLayout title={title} description={description}>
   <Hero />
   <AboutUs />
-  <Products />
-  <Contact />
+  <Gallery />
   <Footer />
 </BaseLayout>
