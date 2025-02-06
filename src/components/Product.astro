@@ -1,0 +1,55 @@
+<section class="w-full flex items-center justify-center py-8 font-open-sans">
+  <div class="max-w-4xl mx-4 sm:mx-8 text-center">
+    <h2 class="text-gray-500 mb-8 tracking-wide uppercase">
+      Productos marca
+    </h2>
+    <div class="w-full grid grid-cols-1 sm:grid-cols-2 gap-8">
+      <!-- Polera -->
+      <div class="group">
+        <div class="relative overflow-hidden w-84 h-84 mx-auto rounded-lg shadow-lg">
+          <img
+            src="/products/polera.jpg"
+            alt="Polera parte frontal"
+            class="front w-full h-full object-cover object-center transition-all duration-500 ease-out"
+          />
+          <img
+            src="/products/polera_2.jpg"
+            alt="Polera parte trasera"
+            class="back absolute inset-0 w-full h-full object-cover object-center opacity-0 transition-all duration-500 ease-out group-hover:opacity-100"
+          />
+        </div>
+        <p class="mt-4 text-gray-600 font-medium">Polera Inventario</p>
+      </div>
+
+      <!-- Bolsa -->
+      <div class="group">
+        <div class="relative overflow-hidden w-84 h-84 mx-auto rounded-lg shadow-lg">
+          <img
+            src="/products/bolso.jpg"
+            alt="Bolsa frente"
+            class="front w-full h-full object-cover object-center transition-all duration-500 ease-out"
+          />
+          <img
+            src="/products/bolso_2.jpg"
+            alt="Bolsa otro color"
+            class="back absolute inset-0 w-full h-full object-cover object-center opacity-0 transition-all duration-500 ease-out group-hover:opacity-100"
+          />
+        </div>
+        <p class="mt-4 text-gray-600 font-medium">Bolso Inventario</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  if (window.matchMedia('(max-width: 640px)').matches) {
+    document.querySelectorAll('.group').forEach(group => {
+      const front = group.querySelector('.front');
+      const back = group.querySelector('.back');
+      setInterval(() => {
+        front?.classList.toggle('opacity-0');
+        back?.classList.toggle('opacity-100');
+      }, 3000);
+    });
+  }
+</script>
