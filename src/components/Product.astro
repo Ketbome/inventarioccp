@@ -5,34 +5,34 @@
     </h2>
     <div class="w-full grid grid-cols-1 sm:grid-cols-2 gap-8">
       <!-- Polera -->
-      <div class="group">
+      <div class="group pointer-events-none sm:pointer-events-auto">
         <div class="relative overflow-hidden w-84 h-84 mx-auto rounded-lg shadow-lg">
           <img
             src="/products/polera.jpg"
             alt="Polera parte frontal"
-            class="front w-full h-full object-cover object-center transition-all duration-500 ease-out"
+            class="front w-full h-full object-cover object-center transition-all duration-1000 ease-out"
           />
           <img
             src="/products/polera_2.jpg"
             alt="Polera parte trasera"
-            class="back absolute inset-0 w-full h-full object-cover object-center opacity-0 transition-all duration-500 ease-out group-hover:opacity-100"
+            class="back absolute inset-0 w-full h-full object-cover object-center opacity-0 transition-all duration-1000 ease-out sm:group-hover:opacity-100"
           />
         </div>
         <p class="mt-4 text-gray-600 font-medium">Polera Inventario</p>
       </div>
 
       <!-- Bolsa -->
-      <div class="group">
+      <div class="group pointer-events-none sm:pointer-events-auto">
         <div class="relative overflow-hidden w-84 h-84 mx-auto rounded-lg shadow-lg">
           <img
             src="/products/bolso.jpg"
             alt="Bolsa frente"
-            class="front w-full h-full object-cover object-center transition-all duration-500 ease-out"
+            class="front w-full h-full object-cover object-center transition-all duration-1000 ease-out"
           />
           <img
             src="/products/bolso_2.jpg"
             alt="Bolsa otro color"
-            class="back absolute inset-0 w-full h-full object-cover object-center opacity-0 transition-all duration-500 ease-out group-hover:opacity-100"
+            class="back absolute inset-0 w-full h-full object-cover object-center opacity-0 transition-all duration-1000 ease-out sm:group-hover:opacity-100"
           />
         </div>
         <p class="mt-4 text-gray-600 font-medium">Bolso Inventario</p>
@@ -49,7 +49,7 @@
       setInterval(() => {
         front?.classList.toggle('opacity-0');
         back?.classList.toggle('opacity-100');
-      }, 3000);
+      }, 2500);
     });
   }
 </script>
