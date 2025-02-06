@@ -5,19 +5,19 @@
   },
   "navigation": {
     "home": "Inicio",
-    "catalog": "Catálogo",
     "about": "Nosotros",
+    "catalog": "Catálogo",
     "contact": "Contacto"
   },
   "hero": {
     "welcome": "Bienvenido a",
     "description": "Inventario",
     "backgroundImage": {
-      "img": "src/assets/img/main_banner.webp",
+      "img": "/img/main_banner.webp",
       "alt": "Banner vinilos"
     },
     "icon": {
-      "img": "src/assets/img/inventario_icon.webp",
+      "img": "/img/inventario_icon.webp",
       "alt": "Inventario Record Store - Music Books"
     }
   },
@@ -61,10 +61,16 @@
     }
   },
   "about": {
-    "title": "Sobre Nosotros",
-    "history": "Una historia de pasión por la música",
-    "description": "Desde 2020 compartiendo la mejor música en formato físico",
-    "backgroundImage": "/images/about-background.jpg"
+    "info": {
+      "material": "/video/inventario (540p).webm",
+      "image": "/img/banner_video.webp",
+      "description": "Te contamos sobre nuestro proyecto y pasión por la música en este video"
+    },
+    "sentence": {
+      "material": "/img/banner_disc.webp",
+      "description": "Inventario Record Store - Music Books",
+      "subparagraph": "Record Store from the south end of the 🌎"
+    }
   },
   "contact": {
     "title": "Contacto",

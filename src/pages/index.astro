@@ -1,7 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
-import Featured from "../components/Featured.astro";
 import Products from "../components/Products.astro";
 import AboutUs from "../components/AboutUs.astro";
 import Contact from "../components/Contact.astro";
@@ -13,9 +12,8 @@ const { title, description } = metadata;
 
 <BaseLayout title={title} description={description}>
   <Hero />
-  <Featured />
-  <Products />
   <AboutUs />
+  <Products />
   <Contact />
   <Footer />
 </BaseLayout>
