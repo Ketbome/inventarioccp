@@ -10,10 +10,19 @@ import { about } from '../locales/es/common.json';
           <h3>{about.info.description}</h3>
           <p class="font-bold">¿Quieres conocer más sobre nuestra historia?</p>
         </div>
-        <video controls preload="none" poster={about.info.image} class="w-full md:w-1/2">
-          <source src={about.info.material} type="video/webm" />
-          Tu navegador no soporta el formato de video WebM.
-        </video>
+        <div class="relative w-full md:w-1/2 cursor-pointer group" id="videoContainer">
+          <video
+            id="myVideo"
+            preload="none"
+            controls
+            poster={about.info.image}
+            class="w-full relative z-10">
+            <source src={about.info.material} type="video/webm" />
+            Tu navegador no soporta el formato de video WebM.
+          </video>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none playing:hidden">
+          </div>
+        </div>
       </div>
       <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
         <img src={about.sentence.material} alt={about.sentence.description} class="w-full md:w-1/2 aspect-video" />
@@ -26,3 +35,25 @@ import { about } from '../locales/es/common.json';
     </div>
   </div>
 </section>
+
+<script>
+  const videoContainer = document.getElementById('videoContainer');
+  const video = document.getElementById('myVideo');
+
+  const handleFirstPlay = () => {
+    if (video instanceof HTMLVideoElement) {
+      video.play();
+      videoContainer?.removeEventListener('click', handleFirstPlay);
+    }
+  };
+
+  videoContainer?.addEventListener('click', handleFirstPlay);
+
+  video?.addEventListener('play', () => {
+    videoContainer?.classList.add('playing');
+  });
+
+  video?.addEventListener('pause', () => {
+    videoContainer?.classList.remove('playing');
+  });
+</script>
