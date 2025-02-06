@@ -1,11 +1,11 @@
-// @ts-check
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 
-// https://astro.build/config
 export default defineConfig({
-  site: 'https://ketbome.github.io',
-  base: '',
+  site: 'https://ketbome.github.io/inventarioccp',
+  base: '/',
+  output: 'static',
+  outDir: './docs', // GitHub Pages busca en /docs por defecto
   vite: {
     plugins: [tailwindcss()],
   },
